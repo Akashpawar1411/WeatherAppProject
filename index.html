@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="outer">
+    <div class="header">Akash's weather app</div>
+    <div class="pageContainer">
+        <div class="leftcol">
+            <div class="lefcolContent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">City</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td id="city0">London</td>
+                    </tr>
+                    <tr>
+                        <td id="city0">New York</td>
+                    </tr>
+                    <tr>
+                        <td id="city0">Los Angeles</td>
+                    </tr>
+                    <tr>
+                        <td id="city0">Las Vegas</td>
+                    </tr>
+                </table>
+                <button id="getb" class="getWeatherBtn" onclick="getdata()">Get Weather</button>
+            </div>
+        </div>
+        <div class="rightCol">
+          <div class="searchBar">
+              <input type="text" placeholder="City Name" name="searchcity" id="search-input"><button
+              >Search</button>
+          </div>
+          <div class="detailsTable">
+              <table>
+                  <thead>
+                      <tr>
+                          <th scope="col">City</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">temperature</th>
+                          <th scope="col">Pressure</th>
+                          <th scope="col">Data age</th>
+                          <th scope="col"></th>
+                      </tr>
+                  </thead>
+                  <tbody class="detailsTbody" id="tbody"></tbody>
+              </table>
+              <div id="no-data">No Data</div>
+          </div>  
+
+        </div>
+    </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
